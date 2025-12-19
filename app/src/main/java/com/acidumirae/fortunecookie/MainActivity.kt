@@ -5,8 +5,8 @@ import android.view.View
 import android.view.animation.AnimationUtils
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.acidumirae.fortunecookie.databinding.ActivityMainBinding
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
         binding.fortuneCookieImage.visibility = View.GONE
         binding.instructionText.visibility = View.GONE
         
-        CoroutineScope(Dispatchers.IO).launch {
+        lifecycleScope.launch(Dispatchers.IO) {
             try {
                 val loadedFortunes = fetchFortunesFromUrl(FORTUNE_URL)
                 
@@ -103,9 +103,9 @@ class MainActivity : AppCompatActivity() {
             
             val responseCode = connection.responseCode
             if (responseCode == HttpURLConnection.HTTP_OK) {
-                val reader = BufferedReader(InputStreamReader(connection.inputStream))
-                val content = reader.readText()
-                reader.close()
+                val content = BufferedReader(InputStreamReader(connection.inputStream)).use { reader ->
+                    reader.readText()
+                }
                 
                 // Parse fortunes - assuming they're separated by % character
                 return content.split("%")
