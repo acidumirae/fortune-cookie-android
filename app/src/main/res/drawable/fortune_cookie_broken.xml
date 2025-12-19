@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Left broken piece -->
+    <path
+        android:fillColor="#F4D03F"
+        android:pathData="M70,60 Q65,100 75,140 L85,110 Q80,85 70,60 Z" />
+    
+    <!-- Right broken piece -->
+    <path
+        android:fillColor="#F4D03F"
+        android:pathData="M130,60 Q120,85 125,110 L135,140 Q145,100 130,60 Z" />
+    
+    <!-- Fortune paper peeking out -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M95,85 L105,85 L105,115 L95,115 Z" />
+    
+    <!-- Paper text lines -->
+    <path
+        android:fillColor="#333333"
+        android:pathData="M96,90 L104,90 L104,91 L96,91 Z" />
+    <path
+        android:fillColor="#333333"
+        android:pathData="M96,95 L104,95 L104,96 L96,96 Z" />
+    <path
+        android:fillColor="#333333"
+        android:pathData="M96,100 L104,100 L104,101 L96,101 Z" />
+    
+    <!-- Cookie texture on left piece -->
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M72,80 A2,2 0 1,1 72,80.1 Z" />
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M75,100 A2,2 0 1,1 75,100.1 Z" />
+    
+    <!-- Cookie texture on right piece -->
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M128,80 A2,2 0 1,1 128,80.1 Z" />
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M132,100 A2,2 0 1,1 132,100.1 Z" />
+    
+    <!-- Shadows -->
+    <path
+        android:fillColor="#D68910"
+        android:pathData="M75,130 Q78,135 82,130 Z" />
+    <path
+        android:fillColor="#D68910"
+        android:pathData="M125,130 Q128,135 132,130 Z" />
+</vector>

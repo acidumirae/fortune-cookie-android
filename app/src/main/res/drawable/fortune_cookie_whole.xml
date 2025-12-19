@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+    
+    <!-- Main cookie body - crescent shape -->
+    <path
+        android:fillColor="#F4D03F"
+        android:pathData="M100,60 Q80,100 100,140 Q120,100 100,60 Z" />
+    
+    <!-- Cookie bottom part -->
+    <path
+        android:fillColor="#F39C12"
+        android:pathData="M90,95 Q100,110 110,95 Q105,100 100,103 Q95,100 90,95 Z" />
+    
+    <!-- Cookie texture spots -->
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M85,80 A3,3 0 1,1 85,80.1 Z" />
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M95,70 A2,2 0 1,1 95,70.1 Z" />
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M105,70 A2,2 0 1,1 105,70.1 Z" />
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M115,80 A3,3 0 1,1 115,80.1 Z" />
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M90,120 A2,2 0 1,1 90,120.1 Z" />
+    <path
+        android:fillColor="#E67E22"
+        android:pathData="M110,120 A2,2 0 1,1 110,120.1 Z" />
+    
+    <!-- Shadow/depth -->
+    <path
+        android:fillColor="#D68910"
+        android:pathData="M95,130 Q100,135 105,130 L105,132 Q100,137 95,132 Z" />
+</vector>
