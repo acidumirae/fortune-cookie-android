@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     
     companion object {
         // Default fortune URL - can be changed to any URL that returns text fortunes
-        private const val FORTUNE_URL = "https://raw.githubusercontent.com/bmc/fortunes/master/fortunes"
+        private const val FORTUNE_URL = "https://raw.githubusercontent.com/acidumirae/fortune-cookie-android/refs/heads/main/fortunes"
     }
     
     override fun onCreate(savedInstanceState: Bundle?) {
